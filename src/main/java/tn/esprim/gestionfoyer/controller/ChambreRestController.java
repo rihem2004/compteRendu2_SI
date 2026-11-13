@@ -9,7 +9,7 @@ import tn.esprim.gestionfoyer.service.IChambreService;
 import java.util.List;
 
 @RestController
-@AllArgsConstructor
+@RequestMapping("/chambre")
 public class ChambreRestController {
     @Autowired
     private IChambreService chambreService;

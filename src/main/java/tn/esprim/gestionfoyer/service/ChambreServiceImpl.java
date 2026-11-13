@@ -9,10 +9,10 @@ import tn.esprim.gestionfoyer.repository.ChambreRepository;
 
 import java.util.List;
 
-@AllArgsConstructor
+
 @Service
 public class ChambreServiceImpl implements IChambreService  {
-    @Autowired
+    @Autowired//ou  Noargconstructor
     private ChambreRepository chambreRepository;
 
 
@@ -23,6 +23,7 @@ public class ChambreServiceImpl implements IChambreService  {
 
     @Override
     public Chambre retrieveChambre(Long chambreId) {
+
         return chambreRepository.findById(chambreId).get();
     }
 
